@@ -12,7 +12,7 @@ class shopPage extends React.Component {
     render(){
         const collections = this.state.collections;
         return (
-            <div className = 'shope-page'>
+            <div className = 'shop-page'>
                 {
                     collections.filter((item, index) => index < 4).map((item) => (
                         <PreviewCollection key = {item.id} title = {item.title} routeName = {item.routeName} items = {item.items} />
